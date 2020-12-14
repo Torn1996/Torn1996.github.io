@@ -1,23 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>数组扁平化</title>
-    <url>/2020/09/29/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96/</url>
-    <content><![CDATA[<h3 id="01-数组扁平化"><a href="#01-数组扁平化" class="headerlink" title="01.数组扁平化"></a>01.数组扁平化</h3><blockquote>
-<p>题意：数组扁平化指的是将一个多维的数组转变成一个一维的数组</p>
-<p>例如： const arr = [1,[2,[3,4,5]],[6]]</p>
-</blockquote>
-<ul>
-<li>方法一：使用flat()</li>
-</ul>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">arr.flat(Infinity) &#x3D;&gt; [1,2,3,4,5,6]</span><br><span class="line">函数中的参数为扁平化的层级，默认为1</span><br><span class="line">arr.flat() &#x3D;&gt; [1,2,[3,4,5],6]</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <tags>
-        <tag>js手撕代码</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Vue之生命周期</title>
     <url>/2020/09/23/Vue%E4%B9%8B%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F/</url>
     <content><![CDATA[<h2 id="Vue之生命周期"><a href="#Vue之生命周期" class="headerlink" title="Vue之生命周期"></a>Vue之生命周期</h2><blockquote>
@@ -37,6 +20,38 @@
 ]]></content>
       <tags>
         <tag>Vue</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>前端学习路线</title>
+    <url>/2020/12/14/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/</url>
+    <content><![CDATA[<h2 id="前端学习路线"><a href="#前端学习路线" class="headerlink" title="前端学习路线"></a>前端学习路线</h2><h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><h4 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.掌握html&#x2F;css&#x2F;Javascript等原生前端基础技术，熟悉ES6语法，熟悉相关规范；</span><br><span class="line">2.熟悉React&#x2F;vue&#x2F;Angular中某一类前端常用框架；</span><br><span class="line">3.熟悉Element&#x2F;iView等优秀开源组件；</span><br><span class="line">4.能够独立完成一个小型功能模块的开发及调试。</span><br></pre></td></tr></table></figure>
+
+<h4 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h4><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">1.掌握html&#x2F;css&#x2F;Javascript等原生前端基础技术，熟悉ES6语法，熟悉相关规范；</span><br><span class="line">	HTML</span><br><span class="line">	  学习重点：</span><br><span class="line">	  	基本标签，语义化，区分块级、内联级标签，熟悉head的中的meta</span><br><span class="line">	  学习资料：</span><br><span class="line">	  	书籍：《HTML&amp;&amp;CSS设计与构建网站》</span><br><span class="line">	  	视频：https:&#x2F;&#x2F;www.codecademy.com&#x2F;learn&#x2F;learn-html</span><br><span class="line">	  	网站：菜鸟教程、MDN</span><br><span class="line">	  学习建议：</span><br><span class="line">	  	基本标签：（菜鸟教程）</span><br><span class="line">	 CSS</span><br><span class="line">	   学习重点：</span><br><span class="line">	     基本属性，盒子模型，定位，层叠，区分块级、内联级元素，常用布局，水平居中，垂直居中</span><br><span class="line">	   学习资料：</span><br><span class="line">	     书籍：《CSS世界》</span><br><span class="line">	     视频：https:&#x2F;&#x2F;www.codecademy.com&#x2F;learn&#x2F;learn-css</span><br><span class="line">	     网站：菜鸟教程、MDN，常用布局（https:&#x2F;&#x2F;ruanyifeng.com&#x2F;blog&#x2F;2020&#x2F;08&#x2F;five-css-layouts-in-one-line.html），			   常用水平居中、垂直居中的方式（https:&#x2F;&#x2F;segmentfault.com&#x2F;a&#x2F;1190000014116655），</span><br><span class="line">	          定位（http:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2019&#x2F;11&#x2F;css-position.html）</span><br><span class="line">	   学习建议：</span><br><span class="line">	     基本属性：（菜鸟教程）</span><br><span class="line">	     盒子模型、定位、层叠（《CSS世界》）</span><br><span class="line">	     常用布局：（https:&#x2F;&#x2F;ruanyifeng.com&#x2F;blog&#x2F;2020&#x2F;08&#x2F;five-css-layouts-in-one-line.html）</span><br><span class="line">	     常用水平、垂直居中方式：（https:&#x2F;&#x2F;segmentfault.com&#x2F;a&#x2F;1190000014116655）</span><br><span class="line">	 Javascript</span><br><span class="line">	 	学习重点：</span><br><span class="line">	 	  基本的语法、类型、表达式、控制语句，原型和原链，this的用法及相关原理，闭包，同步，异步，promise，回调，async&#x2F;await</span><br><span class="line">	 	学习资料：</span><br><span class="line">	 	  书籍：《Javascript高级程序设计》</span><br><span class="line">	 	  视频：</span><br><span class="line">	 	  网站：https:&#x2F;&#x2F;www.zhihu.com&#x2F;column&#x2F;c_1103719513056522240</span><br><span class="line">	 	学习建议：</span><br><span class="line">	 	  基本的语法、类型、表达式、控制语句：（《Javascript高级程序设计》）</span><br><span class="line">2.熟悉React&#x2F;vue&#x2F;Angular中某一类前端常用框架；</span><br><span class="line">	Vue</span><br><span class="line">		学习重点：</span><br><span class="line">		  基础指令，生命周期，vue-cli，vue-router，vuex，axios</span><br><span class="line">		学习资料：</span><br><span class="line">		  书籍：《Vue.js快速入门》</span><br><span class="line">		  视频：</span><br><span class="line">		  其他：Vue官网</span><br><span class="line">		学习建议：</span><br><span class="line">		  基础指令：（对着vue官网敲一遍），实现一个简易的todo项目</span><br><span class="line">		  生命周期：对着vue官网的vue实例，了解vue的整个生命周期，实现一个简易的demo，强化对vue生命周期的了解</span><br><span class="line">		  vue-cli、vue-router、vuex：对着官网学习一下vue-cli、vue-router、vuex，给简易的todo项目添加登录界面，</span><br><span class="line">		    通过vue-router进行跳转，然后将用户信息存储到vuex中</span><br><span class="line">		  axios：对着vue官网学习axios，将用户登录接入到后台应用，通过后台进行登录的校验。</span><br><span class="line">3.熟悉Element&#x2F;iView等优秀开源组件</span><br><span class="line">	element</span><br><span class="line">		学习重点：</span><br><span class="line">		  基本组件的使用</span><br><span class="line">		 学习资料：</span><br><span class="line">		   书籍：</span><br><span class="line">		   视频：</span><br><span class="line">		   其他：elemt-ui官网</span><br><span class="line">		 学习建议：</span><br><span class="line">		 	将todo项目中一些不太好看的组件换成element-ui</span><br><span class="line">4.能够独立完成一个小型功能模块的开发及调试。</span><br><span class="line">	学习重点：</span><br><span class="line">		开发调试</span><br><span class="line">	学习资料：</span><br><span class="line">		vue官网devtools</span><br><span class="line">		debugger调试模式</span><br><span class="line">	学习建议：</span><br><span class="line">		在开发todo项目的时候，可以使用devtools、debugger工具进行适当的调试。</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>前端学习路线</category>
+      </categories>
+      <tags>
+        <tag>前端</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数组扁平化</title>
+    <url>/2020/09/29/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96/</url>
+    <content><![CDATA[<h3 id="01-数组扁平化"><a href="#01-数组扁平化" class="headerlink" title="01.数组扁平化"></a>01.数组扁平化</h3><blockquote>
+<p>题意：数组扁平化指的是将一个多维的数组转变成一个一维的数组</p>
+<p>例如： const arr = [1,[2,[3,4,5]],[6]]</p>
+</blockquote>
+<ul>
+<li>方法一：使用flat()</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">arr.flat(Infinity) &#x3D;&gt; [1,2,3,4,5,6]</span><br><span class="line">函数中的参数为扁平化的层级，默认为1</span><br><span class="line">arr.flat() &#x3D;&gt; [1,2,[3,4,5],6]</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <tags>
+        <tag>js手撕代码</tag>
       </tags>
   </entry>
 </search>

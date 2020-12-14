@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="Torn">
+
+
+
+
+
+<title>前端学习路线 | Hexo</title>
+
+
+
+    <link rel="icon" href="/favicon.ico">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 5.2.0"></head>
+<body>
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">Torn&#39;s Blog</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">Torn&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">Posts</a>
+                
+                    <a class="menu-item" href="/category">Categories</a>
+                
+                    <a class="menu-item" href="/tag">Tags</a>
+                
+                    <a class="menu-item" href="/about">About</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+        <div class="main">
+            <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    document.ready(
+        function () {
+            tocbot.init({
+                tocSelector: '.tocbot-list',
+                contentSelector: '.post-content',
+                headingSelector: 'h1, h2, h3, h4, h5',
+                collapseDepth: 1,
+                orderedList: false,
+                scrollSmooth: true,
+            })
+        }
+    )
+
+    function expand_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 6,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "collapse_toc()");
+        b.innerHTML = "Collapse all"
+    }
+
+    function collapse_toc() {
+        var b = document.querySelector(".tocbot-toc-expand");
+        tocbot.init({
+            tocSelector: '.tocbot-list',
+            contentSelector: '.post-content',
+            headingSelector: 'h1, h2, h3, h4, h5',
+            collapseDepth: 1,
+            orderedList: false,
+            scrollSmooth: true,
+        });
+        b.setAttribute("onclick", "expand_toc()");
+        b.innerHTML = "Expand all"
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">前端学习路线</h1>
+            
+                <div class="post-meta">
+                    
+                        Author: <a itemprop="author" rel="author" href="/">Torn</a>
+                    
+
+                    
+                        <span class="post-time">
+                        Date: <a href="#">December 14, 2020&nbsp;&nbsp;0:31:14</a>
+                        </span>
+                    
+                    
+                        <span class="post-category">
+                    Category:
+                            
+                                <a href="/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E8%B7%AF%E7%BA%BF/">前端学习路线</a>
+                            
+                        </span>
+                    
+                </div>
+            
+        </header>
+
+        <div class="post-content">
+            <h2 id="前端学习路线"><a href="#前端学习路线" class="headerlink" title="前端学习路线"></a>前端学习路线</h2><h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><h4 id="要求"><a href="#要求" class="headerlink" title="要求"></a>要求</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">1.掌握html&#x2F;css&#x2F;Javascript等原生前端基础技术，熟悉ES6语法，熟悉相关规范；</span><br><span class="line">2.熟悉React&#x2F;vue&#x2F;Angular中某一类前端常用框架；</span><br><span class="line">3.熟悉Element&#x2F;iView等优秀开源组件；</span><br><span class="line">4.能够独立完成一个小型功能模块的开发及调试。</span><br></pre></td></tr></table></figure>
+
+<h4 id="学习资料"><a href="#学习资料" class="headerlink" title="学习资料"></a>学习资料</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br></pre></td><td class="code"><pre><span class="line">1.掌握html&#x2F;css&#x2F;Javascript等原生前端基础技术，熟悉ES6语法，熟悉相关规范；</span><br><span class="line">	HTML</span><br><span class="line">	  学习重点：</span><br><span class="line">	  	基本标签，语义化，区分块级、内联级标签，熟悉head的中的meta</span><br><span class="line">	  学习资料：</span><br><span class="line">	  	书籍：《HTML&amp;&amp;CSS设计与构建网站》</span><br><span class="line">	  	视频：https:&#x2F;&#x2F;www.codecademy.com&#x2F;learn&#x2F;learn-html</span><br><span class="line">	  	网站：菜鸟教程、MDN</span><br><span class="line">	  学习建议：</span><br><span class="line">	  	基本标签：（菜鸟教程）</span><br><span class="line">	 CSS</span><br><span class="line">	   学习重点：</span><br><span class="line">	     基本属性，盒子模型，定位，层叠，区分块级、内联级元素，常用布局，水平居中，垂直居中</span><br><span class="line">	   学习资料：</span><br><span class="line">	     书籍：《CSS世界》</span><br><span class="line">	     视频：https:&#x2F;&#x2F;www.codecademy.com&#x2F;learn&#x2F;learn-css</span><br><span class="line">	     网站：菜鸟教程、MDN，常用布局（https:&#x2F;&#x2F;ruanyifeng.com&#x2F;blog&#x2F;2020&#x2F;08&#x2F;five-css-layouts-in-one-line.html），			   常用水平居中、垂直居中的方式（https:&#x2F;&#x2F;segmentfault.com&#x2F;a&#x2F;1190000014116655），</span><br><span class="line">	          定位（http:&#x2F;&#x2F;www.ruanyifeng.com&#x2F;blog&#x2F;2019&#x2F;11&#x2F;css-position.html）</span><br><span class="line">	   学习建议：</span><br><span class="line">	     基本属性：（菜鸟教程）</span><br><span class="line">	     盒子模型、定位、层叠（《CSS世界》）</span><br><span class="line">	     常用布局：（https:&#x2F;&#x2F;ruanyifeng.com&#x2F;blog&#x2F;2020&#x2F;08&#x2F;five-css-layouts-in-one-line.html）</span><br><span class="line">	     常用水平、垂直居中方式：（https:&#x2F;&#x2F;segmentfault.com&#x2F;a&#x2F;1190000014116655）</span><br><span class="line">	 Javascript</span><br><span class="line">	 	学习重点：</span><br><span class="line">	 	  基本的语法、类型、表达式、控制语句，原型和原链，this的用法及相关原理，闭包，同步，异步，promise，回调，async&#x2F;await</span><br><span class="line">	 	学习资料：</span><br><span class="line">	 	  书籍：《Javascript高级程序设计》</span><br><span class="line">	 	  视频：</span><br><span class="line">	 	  网站：https:&#x2F;&#x2F;www.zhihu.com&#x2F;column&#x2F;c_1103719513056522240</span><br><span class="line">	 	学习建议：</span><br><span class="line">	 	  基本的语法、类型、表达式、控制语句：（《Javascript高级程序设计》）</span><br><span class="line">2.熟悉React&#x2F;vue&#x2F;Angular中某一类前端常用框架；</span><br><span class="line">	Vue</span><br><span class="line">		学习重点：</span><br><span class="line">		  基础指令，生命周期，vue-cli，vue-router，vuex，axios</span><br><span class="line">		学习资料：</span><br><span class="line">		  书籍：《Vue.js快速入门》</span><br><span class="line">		  视频：</span><br><span class="line">		  其他：Vue官网</span><br><span class="line">		学习建议：</span><br><span class="line">		  基础指令：（对着vue官网敲一遍），实现一个简易的todo项目</span><br><span class="line">		  生命周期：对着vue官网的vue实例，了解vue的整个生命周期，实现一个简易的demo，强化对vue生命周期的了解</span><br><span class="line">		  vue-cli、vue-router、vuex：对着官网学习一下vue-cli、vue-router、vuex，给简易的todo项目添加登录界面，</span><br><span class="line">		    通过vue-router进行跳转，然后将用户信息存储到vuex中</span><br><span class="line">		  axios：对着vue官网学习axios，将用户登录接入到后台应用，通过后台进行登录的校验。</span><br><span class="line">3.熟悉Element&#x2F;iView等优秀开源组件</span><br><span class="line">	element</span><br><span class="line">		学习重点：</span><br><span class="line">		  基本组件的使用</span><br><span class="line">		 学习资料：</span><br><span class="line">		   书籍：</span><br><span class="line">		   视频：</span><br><span class="line">		   其他：elemt-ui官网</span><br><span class="line">		 学习建议：</span><br><span class="line">		 	将todo项目中一些不太好看的组件换成element-ui</span><br><span class="line">4.能够独立完成一个小型功能模块的开发及调试。</span><br><span class="line">	学习重点：</span><br><span class="line">		开发调试</span><br><span class="line">	学习资料：</span><br><span class="line">		vue官网devtools</span><br><span class="line">		debugger调试模式</span><br><span class="line">	学习建议：</span><br><span class="line">		在开发todo项目的时候，可以使用devtools、debugger工具进行适当的调试。</span><br></pre></td></tr></table></figure>
+
+
+        </div>
+
+        
+            <section class="post-copyright">
+                
+                    <p class="copyright-item">
+                        <span>Author:</span>
+                        <span>Torn</span>
+                    </p>
+                
+                
+                
+                
+
+            </section>
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E5%89%8D%E7%AB%AF/"># 前端</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+            
+            <a class="next" rel="next" href="/2020/09/29/%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96/">数组扁平化</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+        </div>
+        <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© Torn | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+</html>
